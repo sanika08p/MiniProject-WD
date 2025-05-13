@@ -1,0 +1,53 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ByteBill – Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- NAVBAR -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-blue-600">ByteBill</h1>
+    </div>
+  </header>
+
+  <!-- LOGIN FORM -->
+  <section class="flex items-center justify-center py-20 bg-gradient-to-br from-blue-50 to-white">
+    <div class="max-w-lg w-full bg-white p-8 rounded-lg shadow-lg">
+      <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Login to ByteBill</h2>
+
+      <!-- ✅ Correct PHP handler -->
+      <form action="login.php" method="POST">
+        <div class="mb-6">
+          <label for="email" class="block text-sm font-medium text-gray-600">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" class="w-full p-3 mt-2 border border-gray-300 rounded-md" required />
+        </div>
+
+        <div class="mb-6">
+          <label for="password" class="block text-sm font-medium text-gray-600">Password</label>
+          <input type="password" id="password" name="password" placeholder="Your Password" class="w-full p-3 mt-2 border border-gray-300 rounded-md" required />
+        </div>
+
+        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700 transition">
+          Login
+        </button>
+      </form>
+
+      <p class="text-center text-sm text-gray-600 mt-4">
+        Don't have an account? <a href="signup.html" class="text-blue-600 hover:text-blue-700">Sign Up</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-100 text-center py-6 text-sm text-gray-600">
+    © 2025 ByteBill. All rights reserved.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ByteBill – Smart Finance</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/lucide@latest/dist/umd/lucide.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body class="bg-gradient-to-br from-white via-sky-50 to-blue-100 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="flex justify-between items-center p-6 max-w-7xl mx-auto">
+    <h1 class="text-2xl font-bold text-blue-800">ByteBill</h1>
+    <div class="space-x-4">
+      <a href="bytebill_website.htm" class="text-blue-700 hover:underline">Home</a>
+      <a href="serve_dashboard.php" class="text-blue-700 hover:underline">Dashboard</a>
+      <a href="#about" class="text-blue-700 hover:underline">About</a>
+      <a href="login.html" class="bg-blue-700 text-white px-4 py-2 rounded-xl hover:bg-blue-800">Login/SignUp</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 px-6" data-aos="fade-up">
+    <h2 class="text-4xl md:text-5xl font-extrabold text-blue-900 mb-4">
+      Automate, Predict, and Save with AI
+    </h2>
+    <p class="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
+      ByteBill scans your bills, predicts your spending patterns, and offers personalized savings advice — powered by AI, Vision OCR, Gmail API, and BigQuery.
+    </p>
+    <a href="#login" class="inline-block bg-blue-700 text-white px-6 py-3 rounded-xl text-lg font-semibold hover:bg-blue-800 transition">Get Started</a>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10 text-center">
+      <div data-aos="fade-up">
+        <i data-lucide="mail-search" class="mx-auto mb-3 w-8 h-8 text-blue-700"></i>
+        <h3 class="font-bold text-lg mb-2">Bill Scanning</h3>
+        <p class="text-gray-600">Uses Gmail API + Vision OCR to auto-read your expenses.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="100">
+        <i data-lucide="bar-chart-3" class="mx-auto mb-3 w-8 h-8 text-blue-700"></i>
+        <h3 class="font-bold text-lg mb-2">Spending Analysis</h3>
+        <p class="text-gray-600"></p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="200">
+        <i data-lucide="lightbulb" class="mx-auto mb-3 w-8 h-8 text-blue-700"></i>
+        <h3 class="font-bold text-lg mb-2">Smart Saving Tips</h3>
+        <p class="text-gray-600">Get AI-driven tips tailored to your habits and lifestyle.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="py-20 px-6 bg-blue-50">
+    <div class="max-w-5xl mx-auto text-center" data-aos="fade-up">
+      <h2 class="text-3xl font-extrabold text-blue-900 mb-6">Simple Pricing</h2>
+      <p class="text-gray-600 mb-12">Choose a plan that fits your financial journey.</p>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Free Plan -->
+        <div class="bg-white p-8 rounded-2xl shadow-md" data-aos="fade-up">
+          <h3 class="text-xl font-semibold mb-2">Starter</h3>
+          <p class="text-3xl font-bold text-blue-800 mb-4">$0</p>
+          <ul class="text-sm text-gray-600 mb-6 space-y-2">
+            <li>✔  Monthly bill scanning</li>
+            <li>✔  Basic predictions</li>
+            <li>✖  Savings tips</li>
+          </ul>
+          <a href="#login" class="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-xl hover:bg-blue-200">Get Started</a>
+        </div>
+
+        <!-- Pro Plan -->
+        <div class="bg-white p-8 rounded-2xl shadow-lg border-2 border-blue-600" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-xl font-semibold mb-2">Pro</h3>
+          <p class="text-3xl font-bold text-blue-800 mb-4">$9.99/mo</p>
+          <ul class="text-sm text-gray-600 mb-6 space-y-2">
+            <li>✔  Real-time bill scanning</li>
+            <li>✔  Advanced spend insights</li>
+            <li>✔  Personalized saving tips</li>
+          </ul>
+          <a href="#login" class="inline-block px-4 py-2 bg-blue-700 text-white rounded-xl hover:bg-blue-800">Upgrade Now</a>
+        </div>
+
+        <!-- Enterprise Plan -->
+        <div class="bg-white p-8 rounded-2xl shadow-md" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-xl font-semibold mb-2">Enterprise</h3>
+          <p class="text-3xl font-bold text-blue-800 mb-4">Custom</p>
+          <ul class="text-sm text-gray-600 mb-6 space-y-2">
+            <li>✔  Team-level insights</li>
+            <li>✔  API access & integrations</li>
+            <li>✔  Dedicated support</li>
+          </ul>
+          <a href="#login" class="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-xl hover:bg-blue-200">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 px-6 bg-white">
+    <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+      <h2 class="text-3xl font-extrabold text-blue-900 mb-4">What is ByteBill?</h2>
+      <p class="text-gray-700 text-lg">
+        ByteBill is your AI-powered financial companion. It connects to your Gmail, reads expense data, analyzes it in real time, and delivers actionable insights to help you save more and spend smarter. No manual tracking, no guesswork — just intelligent automation.
+      </p>
+    </div>
+  </section>
+
+  <!-- Login Section -->
+
+  <!--
+  <section id="login" class="py-20 px-6">
+    <div class="max-w-md mx-auto bg-white p-8 rounded-3xl shadow-xl" data-aos="zoom-in">
+      <h3 class="text-2xl font-bold text-center text-blue-800 mb-4">Login to ByteBill</h3>
+      <form class="space-y-4">
+        <input type="email" placeholder="Email" required class="w-full px-4 py-2 border rounded-xl focus:ring-2 focus:ring-blue-300"/>
+        <input type="password" placeholder="Password" required class="w-full px-4 py-2 border rounded-xl focus:ring-2 focus:ring-blue-300"/>
+        <button type="submit" class="w-full bg-blue-700 text-white py-2 rounded-xl hover:bg-blue-800">Sign In</button>
+      </form>
+      <p class="text-sm text-center text-gray-500 mt-4">
+        New user? <a href="#" class="text-blue-600 hover:underline">Create an account</a>
+      </p>
+    </div>
+  </section>
+  -->
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-gray-500 text-sm">
+   <!-- © 2025 ByteBill. Built with AI for smarter finances. -->
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true });
+  </script>
+</body>
+</html>
